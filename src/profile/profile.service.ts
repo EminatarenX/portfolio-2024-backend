@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { CreateProfileDto } from './dto/create-profile.dto';
+import { CreateProfileDto } from './dto/create-profile.dto.js';
 import { PrismaClient } from '@prisma/client';
 import { OnModuleInit } from '@nestjs/common';
 

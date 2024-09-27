@@ -1,6 +1,6 @@
 import { Injectable, OnModuleInit } from '@nestjs/common';
-import { CreateActivityDto } from './dto/create-activity.dto';
-import { UpdateActivityDto } from './dto/update-activity.dto';
+import { CreateActivityDto } from './dto/create-activity.dto.js';
+import { UpdateActivityDto } from './dto/update-activity.dto.js';
 import { PrismaClient } from '@prisma/client';
 
 @Injectable()

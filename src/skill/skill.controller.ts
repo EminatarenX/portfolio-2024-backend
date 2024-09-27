@@ -7,9 +7,9 @@ import {
   Param,
   Delete,
 } from '@nestjs/common';
-import { SkillService } from './skill.service';
-import { CreateSkillDto } from './dto/create-skill.dto';
-import { UpdateSkillDto } from './dto/update-skill.dto';
+import { SkillService } from './skill.service.js';
+import { CreateSkillDto } from './dto/create-skill.dto.js';
+import { UpdateSkillDto } from './dto/update-skill.dto.js';
 
 @Controller('skill')
 export class SkillController {

@@ -1,6 +1,6 @@
 import { Injectable, OnModuleInit } from '@nestjs/common';
-import { CreateExperienceDto } from './dto/create-experience.dto';
-import { UpdateExperienceDto } from './dto/update-experience.dto';
+import { CreateExperienceDto } from './dto/create-experience.dto.js';
+import { UpdateExperienceDto } from './dto/update-experience.dto.js';
 import { PrismaClient } from '@prisma/client';
 
 @Injectable()

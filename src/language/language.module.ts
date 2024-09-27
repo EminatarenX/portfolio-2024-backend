@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
-import { LanguageService } from './language.service';
-import { LanguageController } from './language.controller';
+import { LanguageService } from './language.service.js';
+import { LanguageController } from './language.controller.js';
 
 @Module({
   controllers: [LanguageController],

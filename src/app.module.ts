@@ -1,15 +1,15 @@
 import { Module } from '@nestjs/common';
-import { ProfileModule } from './profile/profile.module';
-import { ResumeModule } from './resume/resume.module';
-import { ActivityModule } from './activity/activity.module';
-import { SoftSkillModule } from './soft-skill/soft-skill.module';
-import { EducationModule } from './education/education.module';
-import { ExperienceModule } from './experience/experience.module';
-import { LanguageModule } from './language/language.module';
-import { SkillModule } from './skill/skill.module';
-import { ProjectModule } from './project/project.module';
-import { BlogModule } from './blog/blog.module';
-import { MessageModule } from './message/message.module';
+import { ProfileModule } from './profile/profile.module.js';
+import { ResumeModule } from './resume/resume.module.js';
+import { ActivityModule } from './activity/activity.module.js';
+import { SoftSkillModule } from './soft-skill/soft-skill.module.js';
+import { EducationModule } from './education/education.module.js';
+import { ExperienceModule } from './experience/experience.module.js';
+import { LanguageModule } from './language/language.module.js';
+import { SkillModule } from './skill/skill.module.js';
+import { ProjectModule } from './project/project.module.js';
+import { BlogModule } from './blog/blog.module.js';
+import { MessageModule } from './message/message.module.js';
 
 @Module({
   imports: [

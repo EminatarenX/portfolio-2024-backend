@@ -7,9 +7,9 @@ import {
   Param,
   Delete,
 } from '@nestjs/common';
-import { SoftSkillService } from './soft-skill.service';
-import { CreateSoftSkillDto } from './dto/create-soft-skill.dto';
-import { UpdateSoftSkillDto } from './dto/update-soft-skill.dto';
+import { SoftSkillService } from './soft-skill.service.js';
+import { CreateSoftSkillDto } from './dto/create-soft-skill.dto.js';
+import { UpdateSoftSkillDto } from './dto/update-soft-skill.dto.js';
 
 @Controller('soft-skill')
 export class SoftSkillController {

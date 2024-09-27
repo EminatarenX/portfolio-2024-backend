@@ -7,9 +7,9 @@ import {
   Param,
   Delete,
 } from '@nestjs/common';
-import { ExperienceService } from './experience.service';
-import { CreateExperienceDto } from './dto/create-experience.dto';
-import { UpdateExperienceDto } from './dto/update-experience.dto';
+import { ExperienceService } from './experience.service.js';
+import { CreateExperienceDto } from './dto/create-experience.dto.js';
+import { UpdateExperienceDto } from './dto/update-experience.dto.js';
 
 @Controller('experience')
 export class ExperienceController {

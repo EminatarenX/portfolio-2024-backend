@@ -1,8 +1,8 @@
 import { Injectable, OnModuleInit } from '@nestjs/common';
-import { CreateProjectDto } from './dto/create-project.dto';
-import { UpdateProjectDto } from './dto/update-project.dto';
+import { CreateProjectDto } from './dto/create-project.dto.js';
+import { UpdateProjectDto } from './dto/update-project.dto.js';
 import { PrismaClient } from '@prisma/client';
-import { UploaderService } from 'src/services/uploader/s3.service';
+import { UploaderService } from '../services/uploader/s3.service.js';
 import { v4 } from 'uuid';
 
 @Injectable()

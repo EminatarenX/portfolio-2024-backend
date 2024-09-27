@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { CreateResumeDto } from './dto/create-resume.dto';
+import { CreateResumeDto } from './dto/create-resume.dto.js';
 import { PrismaClient } from '@prisma/client';
 import { OnModuleInit } from '@nestjs/common';
 

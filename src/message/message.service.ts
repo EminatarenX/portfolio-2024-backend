@@ -1,5 +1,5 @@
 import { Injectable, OnModuleInit } from '@nestjs/common';
-import { CreateMessageDto } from './dto/create-message.dto';
+import { CreateMessageDto } from './dto/create-message.dto.js';
 import { PrismaClient } from '@prisma/client';
 
 @Injectable()

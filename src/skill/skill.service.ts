@@ -1,6 +1,6 @@
 import { Injectable, OnModuleInit } from '@nestjs/common';
-import { CreateSkillDto } from './dto/create-skill.dto';
-import { UpdateSkillDto } from './dto/update-skill.dto';
+import { CreateSkillDto } from './dto/create-skill.dto.js';
+import { UpdateSkillDto } from './dto/update-skill.dto.js';
 import { PrismaClient } from '@prisma/client';
 
 @Injectable()

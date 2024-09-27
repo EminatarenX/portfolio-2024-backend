@@ -6,7 +6,7 @@ import {
 } from '@aws-sdk/client-s3';
 import { getSignedUrl } from '@aws-sdk/s3-request-presigner';
 import { Injectable } from '@nestjs/common';
-import { envs } from 'src/config';
+import { envs } from '../../config/envs.js';
 
 Injectable();
 export class UploaderService {

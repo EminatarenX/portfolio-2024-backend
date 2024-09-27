@@ -9,9 +9,9 @@ import {
   UseInterceptors,
   UploadedFile,
 } from '@nestjs/common';
-import { ProjectService } from './project.service';
-import { CreateProjectDto } from './dto/create-project.dto';
-import { UpdateProjectDto } from './dto/update-project.dto';
+import { ProjectService } from './project.service.js';
+import { CreateProjectDto } from './dto/create-project.dto.js';
+import { UpdateProjectDto } from './dto/update-project.dto.js';
 import { FileInterceptor } from '@nestjs/platform-express';
 
 @Controller('project')

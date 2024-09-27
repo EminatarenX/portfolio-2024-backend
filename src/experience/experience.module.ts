@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
-import { ExperienceService } from './experience.service';
-import { ExperienceController } from './experience.controller';
+import { ExperienceService } from './experience.service.js';
+import { ExperienceController } from './experience.controller.js';
 
 @Module({
   controllers: [ExperienceController],

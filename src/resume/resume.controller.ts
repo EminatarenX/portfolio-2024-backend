@@ -1,6 +1,6 @@
 import { Controller, Get, Post, Body, Param, Delete } from '@nestjs/common';
-import { ResumeService } from './resume.service';
-import { CreateResumeDto } from './dto/create-resume.dto';
+import { ResumeService } from './resume.service.js';
+import { CreateResumeDto } from './dto/create-resume.dto.js';
 
 @Controller('resume')
 export class ResumeController {

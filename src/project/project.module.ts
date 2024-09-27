@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
-import { ProjectService } from './project.service';
-import { ProjectController } from './project.controller';
-import { UploaderService } from 'src/services/uploader/s3.service';
+import { ProjectService } from './project.service.js';
+import { ProjectController } from './project.controller.js';
+import { UploaderService } from '../services/uploader/s3.service.js';
 
 @Module({
   controllers: [ProjectController],

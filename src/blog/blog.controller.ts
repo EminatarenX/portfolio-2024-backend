@@ -8,8 +8,8 @@ import {
   UseInterceptors,
   UploadedFile,
 } from '@nestjs/common';
-import { BlogService } from './blog.service';
-import { CreateBlogDto } from './dto/create-blog.dto';
+import { BlogService } from './blog.service.js';
+import { CreateBlogDto } from './dto/create-blog.dto.js';
 import { FileInterceptor } from '@nestjs/platform-express';
 
 @Controller('blog')

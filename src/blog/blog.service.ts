@@ -1,7 +1,7 @@
 import { Injectable, OnModuleInit } from '@nestjs/common';
-import { CreateBlogDto } from './dto/create-blog.dto';
+import { CreateBlogDto } from './dto/create-blog.dto.js';
 import { PrismaClient } from '@prisma/client';
-import { UploaderService } from 'src/services/uploader/s3.service';
+import { UploaderService } from '../services/uploader/s3.service.js';
 import { v4 } from 'uuid';
 
 @Injectable()

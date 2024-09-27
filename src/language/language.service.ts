@@ -1,5 +1,5 @@
 import { Injectable, OnModuleInit } from '@nestjs/common';
-import { CreateLanguageDto } from './dto/create-language.dto';
+import { CreateLanguageDto } from './dto/create-language.dto.js';
 import { PrismaClient } from '@prisma/client';
 
 @Injectable()
