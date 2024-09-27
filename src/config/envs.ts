@@ -7,7 +7,7 @@ interface EnvVars {
   AWS_BUCKET_NAME: string;
   AWS_REGION: string;
   AWS_ACCESS_KEY: string;
-  AWS_SECRET_KEY: string;
+  AWS_PROJECT_SECRET_KEY: string;
 }
 
 const envsScheme = joi
@@ -17,7 +17,7 @@ const envsScheme = joi
     AWS_BUCKET_NAME: joi.string().required(),
     AWS_REGION: joi.string().required(),
     AWS_ACCESS_KEY: joi.string().required(),
-    AWS_SECRET_KEY: joi.string().required(),
+    AWS_PROJECT_SECRET_KEY: joi.string().required(),
   })
   .unknown();
 
@@ -35,5 +35,5 @@ export const envs = {
   awsBucketName: env.AWS_BUCKET_NAME,
   awsRegion: env.AWS_REGION,
   awsAccessKey: env.AWS_ACCESS_KEY,
-  awsSecretKey: env.AWS_SECRET_KEY,
+  awsSecretKey: env.AWS_PROJECT_SECRET_KEY,
 };
