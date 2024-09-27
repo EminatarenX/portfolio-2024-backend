@@ -22,6 +22,7 @@ export class ProjectService extends PrismaClient implements OnModuleInit {
     });
 
     await this.uploaderService.upload(image, project.image);
+    return project;
   }
 
   async findAll() {

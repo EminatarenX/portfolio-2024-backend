@@ -3,12 +3,12 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "mongodb"
   url      = env("DATABASE_URL")
 }
 
 model Profile {
-  id        String   @id @default(uuid())
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId 
   name      String
   specialty String
   phone     String
@@ -20,13 +20,13 @@ model Profile {
 }
 
 model Resume {
-  id        String   @id @default(uuid())
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
   content   String
   createdAt DateTime @default(now())
 }
 
 model Activity {
-  id        String   @id @default(uuid())
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
   name      String
   content   String
   icon      String
@@ -35,7 +35,7 @@ model Activity {
 }
 
 model SoftSkill {
-  id        String   @id @default(uuid())
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
   name      String
   content   String
   icon      String
@@ -44,7 +44,7 @@ model SoftSkill {
 }
 
 model Education {
-  id        String   @id @default(uuid())
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
   name      String
   start     Int
   end       Int?
@@ -54,7 +54,7 @@ model Education {
 }
 
 model Experience {
-  id        String   @id @default(uuid())
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
   name      String
   start     Int
   end       Int?
@@ -64,7 +64,7 @@ model Experience {
 }
 
 model Language {
-  id        String   @id @default(uuid())
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
   name      String
   level     Int
   active    Boolean  @default(true)
@@ -72,7 +72,7 @@ model Language {
 }
 
 model Skill {
-  id        String   @id @default(uuid())
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
   name      String
   level     Int
   active    Boolean  @default(true)
@@ -80,7 +80,7 @@ model Skill {
 }
 
 model Project {
-  id        String   @id @default(uuid())
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
   name      String
   category  String
   link      String
@@ -89,7 +89,7 @@ model Project {
 }
 
 model Blog {
-  id        String   @id @default(uuid())
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
   title     String
   category  String?
   image     String?
@@ -100,7 +100,7 @@ model Blog {
 }
 
 model Message {
-  id        String   @id @default(uuid())
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
   name      String
   email     String
   content   String

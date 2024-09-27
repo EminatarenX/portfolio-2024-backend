@@ -6,18 +6,19 @@ import {
 } from '@aws-sdk/client-s3';
 import { getSignedUrl } from '@aws-sdk/s3-request-presigner';
 import { Injectable } from '@nestjs/common';
+import { envs } from 'src/config';
 
 Injectable();
 export class UploaderService {
   private client: S3Client;
   private bucketName: string;
   constructor() {
-    this.bucketName = process.env.AWS_BUCKET_NAME;
+    this.bucketName = envs.awsBucketName;
     this.client = new S3Client({
-      region: process.env.AWS_REGION,
+      region: envs.awsRegion,
       credentials: {
-        accessKeyId: process.env.AWS_ACCESS_KEY,
-        secretAccessKey: process.env.AWS_SECRET_KEY,
+        accessKeyId: envs.awsAccessKey,
+        secretAccessKey: envs.awsSecretKey,
       },
     });
   }
